@@ -15,5 +15,5 @@ module_init(m_init);
 module_exit(m_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Douglas Su");
+MODULE_AUTHOR("Minyakonga");
 MODULE_DESCRIPTION("Hello World program");
