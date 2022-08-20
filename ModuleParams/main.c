@@ -5,24 +5,23 @@
 static char *whom = "Mom";
 static int howmany = 1;
 
-module_param(howmany, int,   S_IRUGO);
-module_param(whom,    charp, S_IRUGO);
+module_param(howmany, int, S_IRUGO);
+module_param(whom, charp, S_IRUGO);
 
-static
-int __init m_init(void)
+static int __init m_init(void)
 {
-	pr_debug("parameters test module is loaded\n");
+    pr_debug("parameters test module is loaded\n");
 
-	for (int i = 0; i < howmany; ++i) {
-		pr_info("#%d Hello, %s\n", i, whom);
-	}
-	return 0;
+    for (int i = 0; i < howmany; ++i)
+    {
+        pr_info("#%d Hello, %s\n", i, whom);
+    }
+    return 0;
 }
 
-static
-void __exit m_exit(void)
+static void __exit m_exit(void)
 {
-	pr_debug("parameters test module is unloaded\n");
+    pr_debug("parameters test module is unloaded\n");
 }
 
 module_init(m_init);
