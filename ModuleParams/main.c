@@ -17,8 +17,7 @@ static int __init m_init(void)
         pr_info("#%d Hello, %s\n", i, whom);
     }
     return 0;
-}s
-
+}
 
 static void __exit m_exit(void)
 {
