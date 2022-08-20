@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/minyakonga/Documents/LinuxDriver'
+make: Leaving directory '/home/minyakonga/Documents/LinuxDriver'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
